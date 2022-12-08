@@ -1,16 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net7.0-ios</TargetFrameworks>
-
-        <UseMaui>true</UseMaui>
-        <SingleProject>true</SingleProject>
+        <Nullable>enable</Nullable>
+        <RootNamespace>XMBindingLibrary</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
+        <IsBindingProject>true</IsBindingProject>
 
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
 
-        <OutputType>Library</OutputType>
-        <RootNamespace>XMBindingLibrary</RootNamespace>
-        <AssemblyName>XMBindingLibrary</AssemblyName>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
@@ -22,10 +19,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ObjcBindingNativeLibrary Include="libXMBindingLibraryUniversal.a">
+        <NativeReference Include="libXMBindingLibraryUniversal.a">
             <Kind>Static</Kind>
             <ForceLoad>True</ForceLoad>
-        </ObjcBindingNativeLibrary>
+        </NativeReference>
     </ItemGroup>
 
 </Project>

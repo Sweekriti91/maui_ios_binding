@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMBindingLibrary", "XMBindingLibrary\XMBindingLibrary.csproj", "{A62E63ED-97A6-475B-8376-912F2C027FAB}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "XMBindingLibrarySample", "XMBindingLibrarySample\XMBindingLibrarySample.csproj", "{AEA56AFD-C32B-4D25-A742-699AF7B9BD9B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingSampleApp", "BindingSampleApp\BindingSampleApp.csproj", "{812A9BCD-87E2-4B07-BBD2-3F042CF98836}"
 EndProject
 Global
